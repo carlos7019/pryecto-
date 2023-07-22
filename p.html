@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <title>Agenda de contactos</title>
+ <link rel="stylesheet" type="text/css" href="p.css">
+ </head>
+ <body>
+ <h1>Agenda de contactos</h1>
+ <form id="formulario-contactos">
+ <label for="id-contacto">ID:</label>
+ <input type="text" id="id-contacto" name="id-contacto">
+ <label for="numero-contacto">numero:</label>
+ <input type="text" id="numero-contacto" name="numero-contacto">
+ <input type="submit" value="Agregar">
+ </form>
+ <table id="tabla-contactos">
+ <thead>
+ <tr>
+ <th>ID</th>
+ <th>numero</th>
+ <th>Acciones</th>
+ </tr>
+ </thead>
+ <tbody>
+ </tbody>
+ </table>
+ <form id="formulario-actualizar">
+ <h2>Actualizar contacto</h2>
+ <label for="id-actualizar">ID:</label>
+<input type="text" id="id-actualizar" name="id-actualizar">
+ <label for="numero-actualizar">numero:</label>
+ <input type="text" id="numero-actualizar" name="numero-actualizar">
+ <button type="button" onclick="actualizar()">Actualizar</button>
+ <button type="button" onclick="eliminarContacto(actual.id)">Eliminar</button>
+ <button type="button" onclick="buscar()">Buscar</button>
+ </form>
+ <script src="p.js"></script>
+ </body>
+</html>
